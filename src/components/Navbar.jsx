@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="bg-blue-600 p-4 h-16 flex items-center justify-between">
@@ -5,23 +7,23 @@ function Navbar() {
       <img
         className="h-full"
         src="https://utfs.io/f/vCCc0jM68PuUXRRu4LbhVqc7UyB3ezvgCp6Z0T8jXr2MEKos"
+        alt="Logo" // It's a good practice to add an alt text for images
       />
       <ul className="flex space-x-4">
         <li>
-          <a href="#" className="text-white">
+          <Link to="/" className="text-white">
             Home
-          </a>
+          </Link>
         </li>
-        <li></li>
         <li>
-          <a href="#" className="text-white">
+          <Link to="/search" className="text-white">
             Search
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="text-white">
+          <Link to="/cart" className="text-white">
             Cart
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
