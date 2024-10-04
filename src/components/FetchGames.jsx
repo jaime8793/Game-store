@@ -7,7 +7,7 @@ function FetchGames({ games, setGames }) {
     const getGames = async () => {
       try {
         const response = await fetch(
-          `/games?key=${API_KEY}&page_size=10`, // Fetching from Vite proxy
+          `/games?key=${API_KEY}&page_size=10`,
           {
             method: "GET",
             headers: {
