@@ -20,7 +20,7 @@ function FetchGames({ games, setGames }) {
         }
         const data = await response.json();
         console.log("Fetched data:", data);
-        setGames(data.results); // Assuming you're fetching a list of games
+        setGames(data.results); 
       } catch (error) {
         console.error("Error fetching games:", error);
       }
